@@ -1,7 +1,7 @@
 """ define all urls which are part of the core BOM app """
-from django.urls import path
-
 from bom.views import views
+from django.conf.urls import include
+from django.urls import path
 
 bom_patterns = [
     # BOM urls
@@ -44,4 +44,8 @@ bom_patterns = [
     path('manufacturer-part/<int:manufacturer_part_id>/add-sellerpart/', views.add_sellerpart, name='manufacturer-part-add-sellerpart'),
     path('manufacturer-part/<int:manufacturer_part_id>/edit', views.manufacturer_part_edit, name='manufacturer-part-edit'),
     path('manufacturer-part/<int:manufacturer_part_id>/delete', views.manufacturer_part_delete, name='manufacturer-part-delete'),
+]
+
+urlpatterns = [
+    path('', include((bom_patterns, 'bom'))),
 ]
