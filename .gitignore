@@ -296,3 +296,4 @@ ENV/
 *.sqlite3
 .idea
 *.bak
+.vscode
