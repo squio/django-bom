@@ -21,7 +21,7 @@
                 {% if organization.number_scheme == 'S' %}<b>'part_class'</b> or {% endif %}<b>'part_number'</b>, <b>'description'</b> or <b>'value'</b>
                 along with <b>'value_units'</b>, and <b>'revision'</b>. {% if organization.number_scheme == 'S' %}If you specify a part number
                 then it must be one that is not already being used. If you don't specify a part number
-                then IndaBOM will create one for you.{% endif %}
+                then {{ APP_NAME }} will create one for you.{% endif %}
             </p>
             </p>
             You may optionally specify a manufacturer and manufacturer's part number using

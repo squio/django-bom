@@ -35,18 +35,18 @@
         <div class="nav-wrapper">
 
             {% if user.is_authenticated %}
-                <a href="{% url 'bom:home' %}" title="IndaBOM | Home" class="brand-logo left hide-on-med-and-down">
-                    <img style="margin-top: 2px; margin-right: 6px;" width="52" alt="IndaBOM Logo" src="{% static 'bom/img/indabom.png' %}"/><span style="position: absolute;">BOM</span>
+                <a href="{% url 'bom:home' %}" title="{{ APP_NAME }} | Home" class="brand-logo left hide-on-med-and-down">
+                    <img style="margin-top: 2px; margin-right: 6px;" width="52" alt="{{ APP_NAME }} Logo" src="{% static 'bom/img/indabom.png' %}"/><span style="position: absolute;">BOM</span>
                 </a>
-                <a href="{% url 'bom:home' %}" title="IndaBOM | Home" class="brand-logo left hide-on-large-only" style="left: 2.5rem;">
-                    <img style="margin-top: 2px; margin-right: 6px;" width="52" alt="IndaBOM Logo" src="{% static 'bom/img/indabom.png' %}"/><span style="position: absolute;">BOM</span>
+                <a href="{% url 'bom:home' %}" title="{{ APP_NAME }} | Home" class="brand-logo left hide-on-large-only" style="left: 2.5rem;">
+                    <img style="margin-top: 2px; margin-right: 6px;" width="52" alt="{{ APP_NAME }} Logo" src="{% static 'bom/img/indabom.png' %}"/><span style="position: absolute;">BOM</span>
                 </a>
             {% else %}
-                <a href="{% url 'login' %}" title="IndaBOM | Home" class="brand-logo left hide-on-med-and-down">
-                    <img style="margin-top: 2px; margin-right: 6px;" width="52" alt="IndaBOM Logo" src="{% static 'bom/img/indabom.png' %}"/><span style="position: absolute;">BOM</span>
+                <a href="{% url 'login' %}" title="{{ APP_NAME }} | Home" class="brand-logo left hide-on-med-and-down">
+                    <img style="margin-top: 2px; margin-right: 6px;" width="52" alt="{{ APP_NAME }} Logo" src="{% static 'bom/img/indabom.png' %}"/><span style="position: absolute;">BOM</span>
                 </a>
-                <a href="{% url 'login' %}" title="IndaBOM | Home" class="brand-logo left hide-on-large-only" style="left: 2.5rem;">
-                    <img style="margin-top: 2px; margin-right: 6px;" width="52" alt="IndaBOM Logo" src="{% static 'bom/img/indabom.png' %}"/><span style="position: absolute;">BOM</span>
+                <a href="{% url 'login' %}" title="{{ APP_NAME }} | Home" class="brand-logo left hide-on-large-only" style="left: 2.5rem;">
+                    <img style="margin-top: 2px; margin-right: 6px;" width="52" alt="{{ APP_NAME }} Logo" src="{% static 'bom/img/indabom.png' %}"/><span style="position: absolute;">BOM</span>
                 </a>
             {% endif %}
 
@@ -96,12 +96,12 @@
             <div class="col l6 s12">
                 <h5 class="white-text">Help django-bom Grow</h5>
                 <p class="grey-text text-lighten-4">We hope you are as excited about django-bom as we are! Please reach out if you'd like to learn more at <a href="mailto:info@indabom.com">info@indabom.com</a>,
-                    and check out the hosted version, <a href="https://www.indabom.com">IndaBOM</a>!</p>
+                    and check out the hosted version, <a href="https://www.indabom.com">{{ APP_NAME }}</a>!</p>
             </div>
             <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" title="IndaBOM | Feedback" href="https://forms.gle/4CUQuBcfBJ4eGXDW8" target="_blank">Feedback</a></li>
+                    <li><a class="grey-text text-lighten-3" title="{{ APP_NAME }} | Feedback" href="https://forms.gle/4CUQuBcfBJ4eGXDW8" target="_blank">Feedback</a></li>
                 </ul>
             </div>
         </div>

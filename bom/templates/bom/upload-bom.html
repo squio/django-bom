@@ -23,13 +23,13 @@
                     a column with the header and <b>'quantity'</b>.
                 </p>
                 <p>
-                    If specified, the part number must have been already created in IndaBOM. Similarly,
-                    if specified, the manufacturer part number must have been already created in IndaBOM.
+                    If specified, the part number must have been already created in {{ APP_NAME }}. Similarly,
+                    if specified, the manufacturer part number must have been already created in {{ APP_NAME }}.
                 </p>
                 <p>
                     Additional fields include <B>'reference'</b> or <b>'designator'</b> to add a reference field to the subpart;
                     <b>'do_not_load'</b> if you don't want the part loaded into the assembly that contains it; <b>'dnp'</b> if
-                    you don't want to upload the part to IndaBOM at all (i.e., just skip over it).
+                    you don't want to upload the part to {{ APP_NAME }} at all (i.e., just skip over it).
                 </p>
                 <form action="{% url 'bom:upload-bom' %}" method="post" enctype="multipart/form-data">
                     {% csrf_token %}

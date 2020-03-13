@@ -44,7 +44,7 @@
                 system.</p>
             <p>Additional fields include 'reference' or 'designator' to add a reference field to the subpart;
                'do_not_load' if you don't want the part loaded into the assembly that contains it; 'dnp' if
-                you don't want to upload the part to IndaBOM.</p>
+                you don't want to upload the part to {{ APP_NAME }}.</p>
             <form action="{% url 'bom:part-upload-bom' part_id=part.id %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="row">
